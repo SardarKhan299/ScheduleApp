@@ -1,0 +1,158 @@
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.schedulix.Fragments.RescheduleAppointment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:id="@+id/progress_bar"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.schedulix.Fragments.RescheduleAppointment"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            >
+
+            <!-- TODO: Update blank fragment layout -->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="@string/hello_blank_fragment" />-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_services"
+                android:drawableLeft="@drawable/setting_reschedule"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/services"
+                android:drawableRight="@drawable/arrow_right"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_staff"
+                android:drawableLeft="@drawable/user_reschedule"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/staff"
+                android:drawableRight="@drawable/arrow_right"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_date"
+                android:drawableLeft="@drawable/calender_reschedule"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="16dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_time"
+                android:drawableLeft="@drawable/clock_reschedule"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/time"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_customer"
+                android:drawableLeft="@drawable/user_reschedule"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/customer"
+                android:drawableRight="@drawable/dropdown"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_layout"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginTop="-8dp"
+                android:visibility="gone"
+                android:paddingBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_customer"
+                    android:id="@+id/new_customer"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/new_customer"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown_customer"
+                    android:id="@+id/unknown_customer"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/unknown"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/existing_customer"
+                    android:id="@+id/existing_customer"
+                    android:background="@drawable/exist"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_note"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:minLines="8"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:hint="@string/hint_note"
+                android:visibility="gone"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_btn"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/action_save"
+                android:layout_marginTop="16dp"
+                />
+
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

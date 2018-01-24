@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.schedulix.Fragments.AddStaff">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/SingularLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtSingular"
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:hint="@string/hint_singular"
+                    style="@style/edt_style"
+                    ></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/PluralLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtPlural"
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:hint="@string/hint_singular"
+                    style="@style/edt_style"
+                    ></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:text="@string/save"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/round_btn"
+                android:textColor="@color/white"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/categoryLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtCategory"
+                    android:layout_width="match_parent"
+                    android:digits="0123456789,qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:hint="@string/hint_category"
+                    style="@style/edt_style"
+                    ></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/titleLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:digits="0123456789,qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:ems="10"
+                    android:hint="@string/hint_title"
+                    style="@style/edt_style"
+                    ></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/descriptionLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:hint="@string/hint_description"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="7"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    style="@style/edt_style" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/durationLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtDuration"
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:hint="@string/hint_duration"
+                    android:inputType="number"
+                    style="@style/edt_style" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/durationTypeLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtDurationType"
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    style="@style/edt_style" />
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/priceLayout">
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:digits="0123456789+-"
+                android:ems="10"
+                android:hint="@string/hint_price"
+                android:inputType="number"
+                style="@style/edt_style" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/capacityLayout"
+                >
+
+                <EditText
+                    android:id="@+id/edtCapacity"
+                    android:layout_width="match_parent"
+                    android:digits="0123456789+-"
+                    android:ems="10"
+                    android:hint="@string/hint_capacity"
+                    android:inputType="number"
+                    style="@style/edt_style" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_register_service"
+                    android:text="@string/register"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/round_btn"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_cancel"
+                    android:text="@string/cancel"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_btn"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>
+

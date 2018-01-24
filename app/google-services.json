@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "7950909680",
+    "firebase_url": "https://schedulix-9367f.firebaseio.com",
+    "project_id": "schedulix-9367f",
+    "storage_bucket": "schedulix-9367f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7950909680:android:77501f7d9f849380",
+        "android_client_info": {
+          "package_name": "com.schedulix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7950909680-2dg4pj2ltfuelv0vpercbe0c75cnehnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schedulix",
+            "certificate_hash": "8050de9430532c044ba3ec3324a731a967d823cb"
+          }
+        },
+        {
+          "client_id": "7950909680-glvbak7jh289ver3d0npmvr5isii6gtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmQjo4PRH6bWqIp0XCUKwrgPylnJ6a8VU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7950909680-glvbak7jh289ver3d0npmvr5isii6gtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

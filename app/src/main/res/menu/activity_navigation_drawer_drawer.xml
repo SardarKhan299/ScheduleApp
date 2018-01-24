@@ -1,0 +1,71 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard"
+            android:checked="true"
+            android:icon="@drawable/booking"
+            />
+        <item
+            android:id="@+id/nav_booking"
+            android:title="Booking"
+            android:checked="true"
+            android:icon="@drawable/booking"
+            />
+        <item
+            android:id="@+id/nav_reviews"
+            android:title="Reviews"
+            android:icon="@drawable/reviews"
+            />
+        <item
+            android:id="@+id/nav_customer"
+            android:title="Customers"
+            android:icon="@drawable/customer"
+            />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="FeedBack"
+            android:icon="@drawable/review"
+            />
+        <!--<item-->
+            <!--android:id="@+id/nav_cuopon"-->
+            <!--android:title="Cuopon"-->
+            <!--android:icon="@drawable/coupons"-->
+            <!--/>-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_businessDetails"-->
+            <!--android:title="Business Details"-->
+            <!--android:icon="@drawable/business"-->
+            <!--/>-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_privacy"-->
+            <!--android:title="Privacy Settings"-->
+            <!--android:icon="@drawable/privacy"-->
+            <!--/>-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_staff"-->
+            <!--android:title="Staff"-->
+            <!--android:icon="@drawable/staff"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_resources"-->
+            <!--android:title="Resources"-->
+            <!--android:icon="@drawable/resources"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_services"-->
+            <!--android:title="Services"-->
+            <!--android:icon="@drawable/services"-->
+            <!--/>-->
+        <item
+            android:id="@+id/nav_about"
+            android:title="About"
+            android:icon="@drawable/about"
+            />
+    </group>
+</menu>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_margin="16dp"
+        >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_staff"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/user_reschedule"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="16dp"
+                    android:paddingRight="8dp"
+                    android:hint="@string/staff"
+                    android:drawableRight="@drawable/arrow_right"
+                    style="@style/edt_style"
+                    ></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/edt_date"
+                    android:drawableLeft="@drawable/calender_reschedule"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="16dp"
+                    style="@style/edt_style"
+                    />
+
+            </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Select Time"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/edtStartTime"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:paddingRight="8dp"
+                android:drawableRight="@drawable/clock_reschedule"
+                style="@style/edt_style"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="40dp"
+                android:text="To"
+                android:layout_toRightOf="@+id/edtStartTime"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <EditText
+                android:id="@+id/edtEndTime"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:paddingRight="8dp"
+                android:drawableRight="@drawable/clock_reschedule"
+                style="@style/edt_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="12"
+                android:scrollbars="vertical"
+                android:hint="@string/hint_reason"
+                android:textColorHint="@color/color_hint"
+                android:layout_below="@+id/edtStartTime"
+                android:layout_marginTop="16dp"
+                style="@style/edt_style"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Selected Time"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:id="@+id/rvSelectedDates"
+        ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Schedulix</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add">AddCustomer</string>
+    <string name="action_save">Save</string>
+    <string name="reportIssue">Report Issue</string>
+    <string name="text_signin">SIGN IN</string>
+    <string name="text_change_password">CHANGE PASSWORD</string>
+    <string name="text_login">LOGIN</string>
+    <string name="action_forgot">Forgot Password?</string>
+    <string name="text_back_login">Back to login Page</string>
+    <string name="action_remember">Remember me</string>
+    <string name="title_activity_login">Login</string>
+    <string name="hint_username">USER NAME</string>
+    <string name="hint_email">EMAIL ID</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="hint_firstname">FirstName</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_singular">Enter Singular Form</string>
+    <string name="hint_plural">Enter Plural Form</string>
+    <string name="hint_lastname">LastName</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_zip_code">ZIP</string>
+    <string name="hint_home_no">Mobile Number</string>
+    <string name="hint_work_no">Work .Ph</string>
+    <string name="hint_mobile_no">Mobile</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_country_sel">Select Country</string>
+    <string name="hint_state_sel">Select State</string>
+    <string name="hint_city_sel">Select City</string>
+    <string name="hint_search_customer">Search Customer</string>
+    <string name="add_appointment">Add Appointment</string>
+    <string name="future">Future Unavilabilty</string>
+    <string name="hint_state">Region</string>
+    <string name="hint_city">City</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_capacity">Capacity</string>
+    <string name="register">Add</string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_duration">Duration</string>
+    <string name="splashText">Discover the easiest way to grow \n your business with schedulix </string>
+    <string name="forgotText">Info! Enter your email address in the box below and \n we will send you an email with  information on \n how to reset your password</string>
+    <string name="title_activity_forget_password">Forgot Password</string>
+    <string name="title_1">First</string>
+    <string name="description_1">Description</string>
+    <string name="title_2">Title2</string>
+    <string name="title_activity_navigation_drawer">DashBoard</string>
+    <string name="facebook_app_id">996911037110556</string>
+    <string name="twitter_app_id">996911037110556</string>
+    <string name="no_record_found">No Record Found</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="hint_note">Add Some Note</string>
+    <string name="hint_reason">Reason</string>
+
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
+    <string-array name="nav_item_activity_titles">
+        <item>Dashboard</item>
+        <item>Booking</item>
+        <item>Reviews</item>
+        <item>Customers</item>
+        <item>Cuopon</item>
+        <item>Business Details</item>
+        <item>Privacy Settings</item>
+        <item>Staff</item>
+        <item>Resources</item>
+        <item>Services</item>
+        <item>About</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register">Register</string>
+    <string name="err_msg_name">Cannot be Empty</string>
+    <string name="err_msg_email">Not a Valid Email Address</string>
+
+
+    ///////////// Add Appointment /////////////
+    <string name="services">Services</string>
+    <string name="staff">Staff</string>
+    <string name="time">Time</string>
+    <string name="customer">Customer</string>
+    <string name="new_customer">New</string>
+    <string name="existing_customer">Existing</string>
+    <string name="unknown_customer">Unknown</string>
+
+
+</resources>

@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <!--<ImageView-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:alpha="0.3"-->
+    <!--android:src="@mipmap/ic_launcher" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Booking"-->
+    <!--/>-->
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--app:layout_anchorGravity="bottom|right|end"-->
+        <!--android:id="@+id/addAppointment"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:src="@drawable/add_plus"-->
+        <!--/>-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="@color/login_pink"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            app:mcv_arrowColor="@color/colorPink"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_text_selected"
+            />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/calendarView"
+            android:layout_weight="0.7"
+            />
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        fab:menu_fab_size="mini"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/colorPink"
+        fab:menu_colorPressed="@color/colorPink"
+        fab:menu_colorRipple="@color/colorPink"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/add_dashboard"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="@color/black"
+        fab:menu_labels_colorPressed="@color/black"
+        fab:menu_labels_colorRipple="@color/black"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        android:scaleType="center">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_dashboard"
+            fab:fab_size="mini"
+            fab:fab_label="@string/add_appointment"
+            app:fab_colorNormal="@color/login_pink"
+            app:fab_colorPressed="@color/login_pink"
+            app:fab_colorRipple="@color/login_pink"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/futureUnavailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/future_dashboard"
+            fab:fab_size="mini"
+            fab:fab_label="@string/future"
+            app:fab_colorNormal="@color/login_pink"
+            app:fab_colorPressed="@color/login_pink"
+            app:fab_colorRipple="@color/login_pink"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:visibility="visible"
+        android:id="@+id/progress_bar"
+        android:layout_marginBottom="60dp"
+        />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:visibility="visible"
+        android:text="@string/no_record_found"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        />
+
+
+</FrameLayout>

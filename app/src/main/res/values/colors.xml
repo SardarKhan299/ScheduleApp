@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@color/color_bg</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#2d2d2d</color>
+    <color name="color_black_app">#2d2d2d</color>
+    <color name="colorPink">#ed145b</color>
+    <color name="color_bg">#27282d</color>
+    <color name="drawer_bg">#28292e</color>
+    <color name="color_text_unselected">#656567</color>
+    <color name="color_text_selected">#e7e3e2</color>
+    <color name="color_hint">#4d4e50</color>
+    <color name="login_pink">#ed145b</color>
+
+
+</resources>

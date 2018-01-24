@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dot_large"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Sgps"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:id="@+id/customer_name"
+                    android:layout_weight=".3"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Bahubhali"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:id="@+id/date_to_from"
+                    android:layout_weight=".3"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="12:30 to 3:00pm"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:id="@+id/staff"
+                    android:layout_weight=".3"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="Katapa,Lovepreet"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:weightSum="1"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/dotless_large_"
+                    android:id="@+id/imageView2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="5"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/price"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="200"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Booking:"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/date"
+                        android:layout_weight="1"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="March-2017"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/time"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:textSize="15dp"
+                        android:text="10:30Am"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
